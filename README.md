@@ -1,27 +1,61 @@
-# TiendaRopa
+# "Todo-Shop"- Tienda online
+Todo-Shop es un proyecto ecommerce hecho con Angular v18 que incluye una simple navegación, carrito de compra y un sistema de pago mediante stripe y nodejs. Se ha utilizado FakeStoreApi como RestApi para manejar y visualizar los datos relacionados a los productos.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+## Instalación
+Para instalar, simplemente descargue el archivo zip desde el repositorio y a continuación siga los siguientes pasos:
+1. Asegurese de tener instalado angular en su sistema.
+2. Extraiga el contenido (en una carpeta).
+3. Abra la carpeta en su editor de código.
+4. En la terminal, verifique la ruta correcta a la carpeta y ejecute npm install:
+```
+cd tienda-ropa
+npm install
+```
+5. En la terminal, vaya a la carpeta server y levante el servidor:
+```
+cd server
+node server.js
+```
+> [!NOTE]
+> La terminal tiene que devolver un mensaje que diga "Servidor corriendo en puerto 4242..."
 
-## Development server
+6. Abra una nueva terminal, verifique que se encuentra posicionado en la carpeta tienda-ropa y ejecute el siguiente comando:
+```
+ng serve -o
+```
+7. Listo! la aplicación se encuentra corriendo.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tecnologías utilizadas
 
-## Code scaffolding
+| Icono/URL  | Nombre |
+| ------------- | ------------- |
+| [![html](https://skillicons.dev/icons?i=html)](https://developer.mozilla.org/en-US/docs/Web/HTML)  | HTML  |
+| [![css](https://skillicons.dev/icons?i=css)](https://developer.mozilla.org/es/docs/Web/CSS)  | CSS  |
+| [![javascript](https://skillicons.dev/icons?i=js)](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics) | Javascript |
+| [![typescript](https://skillicons.dev/icons?i=ts)](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics) | Typescript |
+| [![angular](https://skillicons.dev/icons?i=angular)](https://angular.dev/) | Angular |
+| [![tailwind](https://skillicons.dev/icons?i=tailwind)](https://tailwindcss.com/) | Tailwind |
+| [![nodejs](https://skillicons.dev/icons?i=nodejs)](https://nodejs.org/en) | Node.js |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Herramientas utilizadas
+| Icono/URL  | Nombre |
+| ------------- | ------------- |
+| [![vscode](https://skillicons.dev/icons?i=vscode)](https://code.visualstudio.com/)  | Visual Studio Code  |
+| [![vscode](https://skillicons.dev/icons?i=postman)](https://www.postman.com/)  | Postman  |
+| [![git](https://skillicons.dev/icons?i=git)](https://git-scm.com/)  | Git  |
+| [![vscode](https://skillicons.dev/icons?i=github)](https://github.com/)  | Github  |
 
-## Build
+## Tipografia y colores
+- Roboto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Color  | Código |
+| ------------- | ------------- |
+| ![#f03c15](https://placehold.co/15x15/ba005c/ba005c.png)  | #ba005c  |
+| ![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png)  | #ffffff  |
+| ![#3f2c54](https://placehold.co/15x15/3f2c54/3f2c54.png)  | #3f2c54  |
+| ![#fff8f8](https://placehold.co/15x15/fff8f8/fff8f8.png)  | #fff8f8  |
+| ![#000000](https://placehold.co/15x15/000000/000000.png)  | #000000  |
 
-## Running unit tests
+## Licencia
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[MIT](https://choosealicense.com/licenses/mit/)

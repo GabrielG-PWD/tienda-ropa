@@ -1,0 +1,30 @@
+@if (product) {
+<mat-card class="!bg-white p-3"
+          [ngClass]="{ 'text-center': !fullWidthMode }">
+  <div [ngClass]="{ flex: fullWidthMode }">
+    <img class="mb-1 mx-auto"
+         [ngClass]="{ 'h-[200px]': !fullWidthMode, 'h-[360px]': fullWidthMode }"
+         [src]="product.image" />
+    <div class="w-full"
+         [ngClass]="{ 'px-8 flex flex-col justify-between': fullWidthMode }">
+      <div>
+        <p class="truncate hover:whitespace-normal"
+           [ngClass]="{ truncate: !fullWidthMode }">
+          {{ product.title }}
+        </p>
+        @if (fullWidthMode) {
+        <p>
+          {{ product.description }}
+        </p>
+        }
+      </div>
+      <div class="flex justify-between">
+        <span class="text-[#3f2c54]">{{ product.price | currency }}</span>
+        <button (click)="onAddToCart()">
+          <mat-icon class="text-[#3f2c54]">shopping_cart</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</mat-card>
+}

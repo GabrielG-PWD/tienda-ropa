@@ -1,0 +1,17 @@
+@if (categories) {
+<mat-expansion-panel class="p-1">
+  <mat-expansion-panel-header>
+    <mat-panel-title class="!text-[#ba005c]">
+      Categorias
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-selection-list [multiple]="false">
+    @for (category of categories; track $index) {
+    <mat-list-option [value]="category"
+                     (click)="onShowCategory(category)">
+      {{ category }}
+    </mat-list-option>
+    }
+  </mat-selection-list>
+</mat-expansion-panel>
+}
